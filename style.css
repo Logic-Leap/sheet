@@ -134,7 +134,7 @@
 .left-bottom {
   position: fixed;
   bottom: 18px; 
-  left: 0; 
+  left: 15px; 
   padding: 10px; 
   background-color: white; 
   z-index: 1000; 
