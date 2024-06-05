@@ -1,0 +1,67 @@
+.image-container {
+    position: relative;
+    width: 100%; /* Ensures the container takes full width of the parent */
+    max-width: 100%; /* Ensures the container does not exceed the parent's width */
+    display: flex; /* Flexbox to center the image within the container */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    overflow: hidden; /* Ensures no overflow */
+  }
+  
+  .banner-image {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+   
+    
+  }
+  
+  .title {
+    position: absolute;
+    top: 50%; /* Centers the heading vertically within the image */
+    left: 10px; /* Adjust the left position as needed */
+    transform: translateY(-50%); /* Vertically centers the heading */
+ /* Optional: Add a background for better readability */
+    padding: 10px; /* Optional: Add padding around the text */
+    margin: 0; /* Removes default margin */
+    color: #000; /* Adjust text color as necessary */
+    max-width: calc(100% - 20px); /* Ensures the heading does not overflow the image */
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the container takes the full height of the viewport */
+  }
+  
+  .about-us {
+    width: 31em;
+    height: 369px;
+    background-color: rgb(48, 50, 53);
+    border-radius: 52px;
+  }
+  .about{
+    text-align: center;
+    color: rgb(216, 209, 209);
+  }
+  @media (max-width: 768px) {
+    .banner-image {
+      height: 18em; 
+    }
+  }
+  .white{
+    color: rgb(0, 0, 0);
+  }
+  .phone {
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    margin-left: 3em;
+    border-radius: 32px;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 23px;
+  }
+
+  
