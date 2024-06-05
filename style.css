@@ -62,6 +62,14 @@
     .banner-image {
       height: 18em; 
     }
+    .about-us{
+      width: 23em;
+      height: 332px;
+      background-color: rgb(48, 50, 53);
+      border-radius: 52px;
+      margin-top: -23em;
+      
+    }
   }
   .white{
     color: rgb(0, 0, 0);
