@@ -1,37 +1,47 @@
 .image-container {
     position: relative;
-    width: 100%; /* Ensures the container takes full width of the parent */
-    max-width: 100%; /* Ensures the container does not exceed the parent's width */
-    display: flex; /* Flexbox to center the image within the container */
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-    overflow: hidden; /* Ensures no overflow */
+    width: 100%; 
+    max-width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
   }
-  
+  .sample{
+    position: absolute;
+    top: 55%; 
+    left: 10px; 
+    transform: translateY(-50%);
+ 
+    padding: 10px;
+    margin: 0; 
+    color: #000000; 
+    max-width: calc(100% - 20px);
+    box-sizing: border-box; 
+  }
   .banner-image {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%; 
+    height: auto; 
    
     
   }
   
   .title {
     position: absolute;
-    top: 50%; /* Centers the heading vertically within the image */
-    left: 10px; /* Adjust the left position as needed */
-    transform: translateY(-50%); /* Vertically centers the heading */
- /* Optional: Add a background for better readability */
-    padding: 10px; /* Optional: Add padding around the text */
-    margin: 0; /* Removes default margin */
-    color: #000000; /* Adjust text color as necessary */
-    max-width: calc(100% - 20px); /* Ensures the heading does not overflow the image */
-    box-sizing: border-box; /* Ensures padding is included in the element's width */
+    top: 50%; 
+    left: 10px;
+    transform: translateY(-50%);
+    padding: 10px;
+    margin: 0; 
+    color: #000000; 
+    max-width: calc(100% - 20px); 
+    box-sizing: border-box; 
   }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensures the container takes the full height of the viewport */
+    height: 100vh; 
   }
   
   .about-us {
@@ -59,8 +69,8 @@
   }
   .phone-container {
     display: flex;
-    justify-content: flex-start; /* Aligns items to the start of the container */
-    align-items: center; /* Aligns items vertically centered */
+    justify-content: flex-start; 
+    align-items: center; 
     margin-left: 1em;
   }
   
@@ -70,14 +80,14 @@
     background-color: white;
     margin-left: 3em;
     border-radius: 32px;
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     margin-top: 23px;
   }
   
   .phone:first-child {
-    margin-left: 0; /* Remove left margin from the first item */
+    margin-left: 0; 
   }
   
 
@@ -87,9 +97,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%; /* Adjust the height as necessary */
+    height: 50%; 
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    pointer-events: none; /* Ensures it doesn’t interfere with any interactions */
+    pointer-events: none; 
   }
   .para{
     color: white;
@@ -100,16 +110,16 @@
     margin-top: 3em;
   }
   .bottom {
-    position: fixed; /* Make it stick while scrolling */
-    bottom: 20px; /* Position from the bottom of the viewport */
-    right: 20px; /* Position from the right of the viewport */
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
     background-color: white;
     border-radius: 32px;
-    display: flex; /* Use Flexbox */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    align-items: center; 
     padding: 0.5em 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
     font-family: Arial, sans-serif;
 }
 .contact {
@@ -123,18 +133,18 @@
 
 .left-bottom {
   position: fixed;
-  bottom: 18px; /* Align to the bottom edge */
-  left: 0; /* Align to the left edge */
-  padding: 10px; /* Optional: Add some padding */
-  background-color: white; /* Optional: Add a background color */
-  z-index: 1000; /* Ensure it stays above other content */
+  bottom: 18px; 
+  left: 0; 
+  padding: 10px; 
+  background-color: white; 
+  z-index: 1000; 
   border-radius: 32px;
 }
 
 .left-bottom svg {
-  width: 2em; /* Adjust size as needed */
-  height: 2em; /* Adjust size as needed */
-  fill: currentColor; /* Ensure the fill color is applied */
+  width: 2em; 
+  height: 2em; 
+  fill: currentColor;
 }
 .lft{
   background-color: aliceblue;
