@@ -102,17 +102,15 @@
   .title{
     top: 58%;
   }
-
   .about-us {
     width: 22em;
-    height: 332px;
+    height: 365px;
     background-color: rgb(37 38 40);
     border-radius: 18px;
-    margin-top: -29em;
+    margin-top: -26em;
 
   }
 }
-
 .white {
   color: rgb(0, 0, 0);
   font-size: 26px;
