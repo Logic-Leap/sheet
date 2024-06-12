@@ -75,6 +75,8 @@
 
 
   </div>
+
+  
   <div class="container" style="margin-top: 50px;">
     <div class="about-us">
       <div class="content">
@@ -132,7 +134,7 @@
 </div>
 
 
-<div class="left-bottom " style="cursor: pointer;" id="shareButton">
+<div id="shareButton" class="left-bottom " style="cursor: pointer;" id="shareButton">
   <svg xmlns="http://www.w3.org/2000/svg"  width="1em" height="1em" viewBox="0 0 16 16">
     <path fill="currentColor"  d="M3.75 6.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-6.5a.25.25 0 0 0-.25-.25h-1a.75.75 0 0 1 0-1.5h1c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-6.5C2 5.784 2.784 5 3.75 5h1a.75.75 0 0 1 0 1.5ZM7.823.177a.25.25 0 0 1 .354 0l2.896 2.896a.25.25 0 0 1-.177.427H8.75v5.75a.75.75 0 0 1-1.5 0V3.5H5.104a.25.25 0 0 1-.177-.427Z"/>
   </svg>
@@ -153,22 +155,22 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
-     document.getElementById('shareButton').addEventListener('click', async () => {
-      if (navigator.share) {
-        try {
-          await navigator.share({
-            title: 'Check out this page!',
-            text: 'This is an interesting page I found.',
-            url: window.location.href
-          });
-          console.log('Content shared successfully');
-        } catch (error) {
-          console.error('Error sharing content:', error);
-        }
-      } else {
-        alert('Web Share API not supported in this browser.');
-      }
-    });
+    document.getElementById('shareButton').addEventListener('click', function() {
+    const url = window.location.href;
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            text: 'Check out this page:',
+            url: url
+        }).then(() => {
+            console.log('Thanks for sharing!');
+        }).catch(console.error);
+    } else {
+        // Fallback for browsers that do not support the Web Share API
+        prompt('Copy this link to share:', url);
+    }
+});
+
  </script>
     
 </body>
